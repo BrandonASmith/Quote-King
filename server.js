@@ -10,6 +10,10 @@ app.get('/', function(req, res) {
   res.sendFile('/Users/brandon/Desktop/quote-app/quote_kings/index.html')
 })
 
+app.post('/quotes', function(req, res) {
+  console.log('Hellooooooooooooooooo!')
+})
+
 
 
 app.listen(3000, function() {

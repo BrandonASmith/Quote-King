@@ -5,6 +5,11 @@ var express 	= require('express')
 	MongoClient = require('mongodb').MongoClient
 	app			= express()
 
+//get request for READ operation
+app.get('/', function(req, res) {
+  res.sendFile('/Users/brandon/Desktop/quote-app/quote_kings/index.html')
+})
+
 
 
 app.listen(3000, function() {
